@@ -1,0 +1,46 @@
+<body>
+  <div class="container">
+    <!-- 가운데 정렬된 로그인 폼 상자 (가로 500px) -->
+    <div class="mx-auto" style="width: 500px">
+      <!-- 로그인 제목 -->
+      <h1 class="mt-5"><i class="fa-solid fa-right-to-bracket"></i> 로그인</h1>
+
+      <form>
+        <!-- 사용자 ID 입력 필드 -->
+        <div class="mb-3 mt-5">
+          <label for="userid">
+            <i class="fa-solid fa-user"></i> 사용자ID:
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="userid"
+            name="userid"
+            placeholder="사용자ID를입력하세요."
+          />
+        </div>
+
+        <!-- 비밀번호 입력 필드 -->
+        <div class="mb-3 mt-3">
+          <label for="password">
+            <i class="fa-solid fa-lock"></i> 비밀번호:
+          </label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="비밀번호를입력하세요."
+          />
+        </div>
+
+        <!-- 로그인 버튼 (가로 100%로 확장되는 버튼) -->
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-right-to-bracket"></i> 로그인
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

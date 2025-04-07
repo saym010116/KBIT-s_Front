@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pattern1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      #menu {
+        width: 260px;
+        float: left;
+      }
+      #section {
+        width: 700px;
+        float: right; /*부모 요소의 오른쪽에 붙음*/
+        /* float: left; 부모 요소의 왼쪽에 붙음*/
+      }
+      li {
+        list-style: none;
+      }
+      @media screen and (max-width: 767px) {
+        /* 스마트폰 사이즈에서는 원래 설정값을 없애고 유연하게 자동 배치로 변경 */
+        body {
+          width: auto; /* 지정된 너비를 없애고, 콘텐츠에 맞게 자동조절*/
+        }
+        #menu {
+          width: auto; /* 지정된 너비를 없애고, 콘텐츠에 맞게 자동 조절 */
+          float: none; /* 좌우로 떠 있는 상태를 해제하고, 일반적인 흐름(block 레벨)으로 배치 */
+        }
+        #section {
+          width: auto;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li>메뉴A</li>
+        <li>메뉴B</li>
+        <li>메뉴C</li>
+      </ul>
+    </div>
+    <div id="section">
+      <h1>Lorem Ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab modi ea
+        ratione officiis, deserunt ullam necessitatibus illo vitae velit animi
+        iste! Adipisci, nobis eius hic doloribus quas ipsam eum dolorem.
+      </p>
+    </div>
+  </body>
+</html>
